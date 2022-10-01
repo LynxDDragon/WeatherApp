@@ -1,0 +1,77 @@
+<!-- index.html -->
+
+<!-- Boilerplate with ! + ENTER -->
+
+<!-- Format with CTRL + SHIFT + ALT + c -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+
+
+
+<body>
+
+    <nav class= "topnav">
+        <a href="#">Pooring</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">I wouldn't Go Outside if I where You</a>
+    </nav>
+
+    <div id="formDiv">
+        <p>Welcome to Pooring!!! Search the name of the city to get the weather</p>
+
+        <form action="/action" id="form" method="post">
+            <div class="entryPoints">
+                <div class="formGroup">
+                    <label for=""></label>
+                    <input type="text" id="typeId" name="type" placeholder="City">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+
+
+        <template  id="myLocation">
+            <h3 id="country">Country</h3>
+            <h3 id="city"> City</h3>
+        </template>
+
+        <div id="area"></div>
+
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <td>Weather</td>
+                    <td>Description</td>
+                    <td>Temperature</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+
+        <template id="myTemplate">
+            <tr>
+                <td id="Weather"></td>
+                <td id="Description"></td>
+                <td id="Temperature"></td>
+            </tr>
+        </template>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
